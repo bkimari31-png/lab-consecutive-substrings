@@ -1,2 +1,18 @@
 Please add your pseudocode to this file
+
+function getConsecutiveSubstrings(input):
+    result = []                     // Initialize an empty array to store substrings
+    for i from 0 to length of input - 1:
+        substring = ""              // Start with an empty substring
+        for j from i to length of input - 1:
+            substring += input[j]   // Append the current character
+            add substring to result
+    return result
+
 And a written explanation of your solution
+
+Outer loop sets the starting index of the substring.
+
+Inner loop grows the substring from the start index one character at a time.
+
+Each substring is pushed into the result array.
